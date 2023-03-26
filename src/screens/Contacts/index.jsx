@@ -1,15 +1,22 @@
 import React from 'react';
-import { Article } from './styles';
 
-import { Container } from '../../utils';
+import { Contact } from '../../components/Contact';
 
-const ScreenB = () => {
+import { ContactsList, Title } from './styles';
+
+const Contacts = () => {
   return (
-    <Container>
-      <Article>ScreenB</Article>
-      <Article>Teste</Article>
-    </Container>
+    <>
+      <Title>My Contacts: 5</Title>
+      <ContactsList>
+        <Contact name='Cristian' number={111111111} />
+        <Contact name='John' number={222222222} />
+        <Contact name='Marta' number={333333333} />
+        <Contact name='Joseph' number={444444444} />
+        <Contact name='Frisk' number={55555555} />
+      </ContactsList>
+    </>
   );
 };
 
-export default ScreenB;
+export default Contacts;

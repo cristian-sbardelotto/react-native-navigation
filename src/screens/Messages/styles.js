@@ -1,5 +1,8 @@
 import styled from 'styled-components/native';
 
-export const Article = styled.Text`
-  color: #000;
+export const MessagesList = styled.View`
+  display: flex;
+  gap: 2rem;
+
+  margin: 2rem 1rem 0 1rem;
 `;

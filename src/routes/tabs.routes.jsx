@@ -10,7 +10,7 @@ const { Screen, Navigator } = createBottomTabNavigator();
 
 export const TabsRoutes = () => {
   return (
-    <Navigator>
+    <Navigator initialRouteName='Messages'>
       <Screen
         name="Messages"
         component={Messages}
