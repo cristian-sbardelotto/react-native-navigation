@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from 'react-native';
-import { Article, Container } from './styles';
+import { Article } from './styles';
+
+import { Container } from '../../utils';
 
 const ScreenC = () => {
   return (

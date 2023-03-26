@@ -1,6 +1,8 @@
 import React from 'react';
-import { Text, Button, View } from 'react-native';
-import { Article, Container } from './styles';
+import { Button } from 'react-native';
+import { Article } from './styles';
+
+import { Container } from '../../utils';
 
 const ScreenA = ({ navigation }) => {
   const goToScreenB = () => navigation.navigate('ScreenB');

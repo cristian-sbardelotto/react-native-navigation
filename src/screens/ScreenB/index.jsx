@@ -1,5 +1,7 @@
 import React from 'react';
-import { Article, Container } from './styles';
+import { Article } from './styles';
+
+import { Container } from '../../utils';
 
 const ScreenB = () => {
   return (

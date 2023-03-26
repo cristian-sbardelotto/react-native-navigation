@@ -1,13 +1,5 @@
-import styled from "styled-components/native";
-
-export const Container = styled.View`
-  background: red;
-  display: grid;
-  place-items: center;
-  gap: 1rem;
-`;
+import styled from 'styled-components/native';
 
 export const Article = styled.Text`
-  color: #fff;
+  color: #000;
 `;
-

@@ -10,9 +10,7 @@ export const TabsRoutes = () => {
   return (
     <Navigator>
       <Screen name="ScreenA" component={ScreenA} />
-
       <Screen name="ScreenB" component={ScreenB} />
-
       <Screen name="ScreenC" component={ScreenC} />
     </Navigator>
   );
