@@ -4,13 +4,13 @@ import { Article } from './styles';
 
 import { Container } from '../../utils';
 
-const ScreenC = () => {
+const Calls = () => {
   return (
     <Container>
       <Button title="Clicar no botão" />
-      <Article>This is the ScreenC</Article>
+      <Article>This is the Calls</Article>
     </Container>
   );
 };
 
-export default ScreenC;
+export default Calls;
