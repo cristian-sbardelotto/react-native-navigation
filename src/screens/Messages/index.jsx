@@ -1,16 +1,13 @@
 import React from 'react';
-import { Button } from 'react-native';
-import { Article } from './styles';
 
-import { Container } from '../../utils';
+import { ContactMessage } from '../../components/ContactMessage';
 
-const Messages = ({ navigation }) => {
+const Messages = () => {
   return (
-    <Container>
-      <Article>Messages</Article>
-      <Button title="Ir para tela B" onPress={() => navigation.navigate('Contacts')} />
-      <Button title="Ir para tela C" onPress={() => navigation.navigate('Calls')} />
-    </Container>
+    <>
+      <ContactMessage name="Cristian" date="03/26/23" lastMessage="See u!" />
+      <ContactMessage name="Marta" date="08/21/22" lastMessage="Goodbye!" />
+    </>
   );
 };
 
