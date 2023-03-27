@@ -1,15 +1,11 @@
 import React from 'react';
-import { Button } from 'react-native';
-import { Article } from './styles';
+import { Button, Text } from 'react-native';
 
-import { Container } from '../../utils';
+import {  } from './styles';
 
 const Calls = () => {
   return (
-    <Container>
-      <Button title="Clicar no botão" />
-      <Article>This is the Calls</Article>
-    </Container>
+    <Text>Hello world, this is Calls!</Text>    
   );
 };
 
