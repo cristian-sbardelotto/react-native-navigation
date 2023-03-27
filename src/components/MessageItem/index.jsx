@@ -3,7 +3,7 @@ import { Text } from 'react-native';
 
 import { ContactGroup, ContactName, ContactContainer } from './styles';
 
-export const ContactMessage = ({
+export const MessageItem = ({
   name = 'Unknown',
   date = '01/01/2000',
   lastMessage = 'Hello!'

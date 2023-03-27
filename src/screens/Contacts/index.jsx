@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Contact } from '../../components/Contact';
+import { ContactItem } from '../../components/ContactItem';
 
 import { ContactsList, Title } from './styles';
 
@@ -9,11 +9,11 @@ const Contacts = () => {
     <>
       <Title>My Contacts: 5</Title>
       <ContactsList>
-        <Contact name='Cristian' number={111111111} />
-        <Contact name='John' number={222222222} />
-        <Contact name='Marta' number={333333333} />
-        <Contact name='Joseph' number={444444444} />
-        <Contact name='Frisk' number={55555555} />
+        <ContactItem name='Cristian' number={111111111} />
+        <ContactItem name='John' number={222222222} />
+        <ContactItem name='Marta' number={333333333} />
+        <ContactItem name='Joseph' number={444444444} />
+        <ContactItem name='Frisk' number={55555555} />
       </ContactsList>
     </>
   );
