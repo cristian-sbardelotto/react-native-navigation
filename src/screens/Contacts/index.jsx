@@ -9,11 +9,11 @@ const Contacts = () => {
     <>
       <Title>My Contacts: 5</Title>
       <ContactsList>
-        <ContactItem name='Cristian' number={111111111} />
-        <ContactItem name='John' number={222222222} />
-        <ContactItem name='Marta' number={333333333} />
-        <ContactItem name='Joseph' number={444444444} />
-        <ContactItem name='Frisk' number={55555555} />
+        <ContactItem name='Cristian'/>
+        <ContactItem name='John' />
+        <ContactItem name='Marta' />
+        <ContactItem name='Joseph' />
+        <ContactItem name='Frisk' />
       </ContactsList>
     </>
   );

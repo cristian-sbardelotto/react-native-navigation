@@ -5,7 +5,7 @@ import { ContactModal } from '../../components/ContactModal';
 
 import { ContactGroup, ContactName, ContactContainer } from './styles';
 
-export const ContactItem = ({ name = 'Unknown', number = '123456789' }) => {
+export const ContactItem = ({ name = 'Unknown', number = '+55 51 123456789' }) => {
   return (
     <ContactContainer>
       <ContactGroup>

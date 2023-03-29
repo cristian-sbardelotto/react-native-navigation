@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const ContactContainer = styled.View`
-  padding: 1rem;
+  padding: 0.8rem;
 
   background: #ddd;
   border-radius: 10px;
