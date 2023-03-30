@@ -1,6 +1,7 @@
-export interface ContactProps {
+export interface IContact {
+  id: number | string;
   name: string;
-  number?: number | string;
+  number: number | string;
+  bio: string;
   date?: string | number;
-  lastMessage?: string;
 }

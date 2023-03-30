@@ -1,10 +1,15 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { ContactProps } from '../../types';
 
 import { ContactGroup, ContactName, ContactContainer } from './styles';
 
-export const MessageItem = (contactInfo: ContactProps) => {
+interface MessageProps {
+  name: string;
+  date: string;
+  lastMessage: string;
+}
+
+export const MessageItem = (contactInfo: MessageProps) => {
   return (
     <ContactContainer>
       <ContactGroup>

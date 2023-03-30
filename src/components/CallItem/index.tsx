@@ -4,9 +4,12 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import { CallContainer, CallDate, CallName, CallGroup } from './styles';
 
-import { ContactProps } from '../../types';
+interface CallProps {
+  name: string;
+  date: string;
+}
 
-export const CallItem = (contactInfo: ContactProps) => {
+export const CallItem = (contactInfo: CallProps) => {
   const generateRandomColor = () => {
     const color = Math.random();
     return color > 0.5 ? 'red' : 'green';
