@@ -10,7 +10,7 @@ export const Title = styled.Text`
 
 export const ContactsList = styled.View`
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
   
   margin: 0 1.4rem;
 `;

@@ -24,7 +24,7 @@ export const CloseButton = styled.Pressable`
   width: 50%;
   padding: 10px;
   
-  border-radius: 20;
+  border-radius: 20px;
   background-color: #2196f3;
 `;
 
