@@ -1,21 +1,18 @@
 import React from 'react';
 import { Text } from 'react-native';
+import { ContactProps } from '../../types';
 
 import { ContactGroup, ContactName, ContactContainer } from './styles';
 
-export const MessageItem = ({
-  name = 'Unknown',
-  date = '01/01/2000',
-  lastMessage = 'Hello!'
-}) => {
+export const MessageItem = (contactInfo: ContactProps) => {
   return (
     <ContactContainer>
       <ContactGroup>
-        <ContactName>{name}</ContactName>
-        <Text>{date}</Text>
+        <ContactName>{contactInfo.name}</ContactName>
+        <Text>{contactInfo.date}</Text>
       </ContactGroup>
 
-      <Text><Text style={{ fontWeight: 'bold' }}>You: </Text>{lastMessage}</Text>
+      <Text><Text style={{ fontWeight: 'bold' }}>You: </Text>{contactInfo.lastMessage}</Text>
     </ContactContainer>
   );
 };

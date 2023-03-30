@@ -5,12 +5,14 @@ import { ContactModal } from '../../components/ContactModal';
 
 import { ContactGroup, ContactName, ContactContainer } from './styles';
 
-export const ContactItem = ({ name = 'Unknown', number = '+55 51 123456789' }) => {
+import { ContactProps } from '../../types';
+
+export const ContactItem = (contactInfo: ContactProps) => {
   return (
     <ContactContainer>
       <ContactGroup>
-        <ContactName>{name}</ContactName>
-        <Text>{number}</Text>
+        <ContactName>{contactInfo.name}</ContactName>
+        <Text>{contactInfo.number}</Text>
       </ContactGroup>
       <ContactModal />
     </ContactContainer>
