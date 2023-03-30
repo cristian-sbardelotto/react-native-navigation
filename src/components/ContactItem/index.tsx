@@ -1,20 +1,30 @@
 import React from 'react';
+import { View } from 'react-native';
 import { Text } from 'react-native';
 
 import { ContactModal } from '../../components/ContactModal';
 
+import { IContact } from '../../types';
+
 import { ContactGroup, ContactName, ContactContainer } from './styles';
 
-import { ContactProps } from '../../types';
+interface ContactProps {
+  contacts: IContact[];
+}
 
-export const ContactItem = (contactInfo: ContactProps) => {
+export const ContactItem = ({ contacts }: ContactProps) => {
   return (
-    <ContactContainer>
-      <ContactGroup>
-        <ContactName>{contactInfo.name}</ContactName>
-        <Text>{contactInfo.number}</Text>
-      </ContactGroup>
-      <ContactModal />
-    </ContactContainer>
+    <View>
+      {contacts &&
+        contacts.map((contact) => (
+          <ContactContainer key={contact.id}>
+            <ContactGroup>
+              <ContactName>{contact.name}</ContactName>
+              <Text>{contact.number}</Text>
+            </ContactGroup>
+            <ContactModal />
+          </ContactContainer>
+        ))}
+    </View>
   );
 };

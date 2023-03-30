@@ -8,9 +8,6 @@ export const Title = styled.Text`
   margin-bottom: 2rem;
 `;
 
-export const ContactsList = styled.View`
-  display: flex;
-  gap: 1.25rem;
-  
+export const Container = styled.View`
   margin: 0 1.4rem;
 `;
